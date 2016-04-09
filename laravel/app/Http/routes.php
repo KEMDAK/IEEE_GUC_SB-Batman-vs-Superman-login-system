@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.app');
 });
+
+Route::controllers([
+
+    '' => 'Auth\AuthController' ,
+    'password' => 'Auth\PasswordController'
+]);
