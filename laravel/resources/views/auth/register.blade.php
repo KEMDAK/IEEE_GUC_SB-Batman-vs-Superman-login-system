@@ -42,7 +42,7 @@
                             <label class="col-md-4 control-label">Your Type</label>
 
                             <div class="col-md-6">
-                                <select class="form-control" id="sel1">
+                                <select class="form-control" id="sel1" name="type">
                                     <option value="1">Superman Lover</option>
                                     <option value="2">Neutral</option>
                                     <option value="3">Batman Lover</option>

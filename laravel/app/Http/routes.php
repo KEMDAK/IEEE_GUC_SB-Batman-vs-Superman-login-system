@@ -11,12 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.app');
-});
+Route::get('/', 'UsersController@index');
+
 
 Route::controllers([
 
     '' => 'Auth\AuthController' ,
     'password' => 'Auth\PasswordController'
 ]);
+
+Route::get('/users/{id}', 'UsersController@show');
+
+
