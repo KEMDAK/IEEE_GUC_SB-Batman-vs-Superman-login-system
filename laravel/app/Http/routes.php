@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'UsersController@index');
+Route::get('/users/{id}', 'UsersController@show');
 
 
 Route::controllers([
@@ -20,6 +21,5 @@ Route::controllers([
     'password' => 'Auth\PasswordController'
 ]);
 
-Route::get('/users/{id}', 'UsersController@show');
 
 
